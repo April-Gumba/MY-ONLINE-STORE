@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Printer Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#000000,#c2c2c2,#000000);
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: x-large;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: x-large;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ff9900;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+            background: linear-gradient(#22ff00,#fffb00);
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            font-size: x-large;
+        }
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product button {
+            background-color: #ff9900;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+        .product button:hover {
+            background-color: #e68a00;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222;
+            color: white;
+            position: relative;
+            width: 100%;
+        }
+       
+    </style>
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>My Printer Store</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="scrollToSection('home')">Home</a></li>
+            <li><a href="#about" onclick="scrollToSection('about')">About Us</a></li>
+            <li><a href="#products" onclick="scrollToSection('products')">Printers</a></li>
+            <li><a href="#promos" onclick="scrollToSection('promos')">Promos</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2>Welcome to My Printer Store</h2>
+        <p>Your One-Stop Online Printer Store! <br>
+
+            At My Printer Store, we bring you high-quality printers, accessories, and supplies at unbeatable prices. Whether you need a reliable home printer, a high-performance office machine, or specialty printing solutions, we’ve got you covered. Our curated selection features top brands, the latest technology, and budget-friendly options to suit every need.
+            
+            Shop with confidence, enjoy fast shipping, and experience top-notch customer service. Let’s make printing simple and hassle-free!
+            
+            Browse our collection today and print smarter with My Printer Store!</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At My Printer Store, we are your trusted destination for high-quality printers, accessories, and printing solutions. Whether you need a reliable home printer, a high-performance office machine, or specialized printing equipment, we have a wide selection to meet your needs.
+
+            Our commitment goes beyond just selling printers—we provide expert guidance, top-tier customer service, and the latest technology to ensure you get the best printing experience. From ink and toner supplies to multifunctional printers and wireless solutions, we make printing effortless and efficient.
+            
+            Shop with confidence at My Printer Store, where quality, convenience, and innovation come together!</p>
+    </section>
+    
+    <section id="products">
+        <h2>Our Printers</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="printer1.jpg" alt="Printer 1">
+                <h3>HP LaserJet Pro</h3>
+                <p>$199.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="printer2.jpg" alt="Printer 2">
+                <h3>Canon Pixma</h3>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="printer3.jpg" alt="Printer 3">
+                <h3>Epson EcoTank</h3>
+                <p>$249.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="printer4.jpg" alt="Printer 4">
+                <h3>Brother HL-L2350DW</h3>
+                <p>$179.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="printer5.jpg" alt="Printer 5">
+                <h3>Xerox WorkCentre 6515</h3>
+                <p>$299.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="promos">
+        <h2>Current Promotions</h2>
+        <p>Save big on our latest printer deals. Limited time only! <br>
+            Current Promotions – Unbeatable Deals on Printers & Accessories!
+            At My Printer Store, we believe in offering top-quality printers and accessories at unbeatable prices. Whether you're upgrading your home office, equipping a business, or looking for a reliable everyday printer, now is the perfect time to save!
+            
+            <br>What’s on Offer?
+         <br>✅ Exclusive Discounts – Get special deals on top-rated inkjet and laser printers.
+         <br>✅ Bundle & Save – Buy a printer with ink or toner and enjoy extra savings.
+         <br>✅ Limited-Time Price Drops – Take advantage of seasonal and flash sales on our best-selling models.
+         <br>✅ Business & Bulk Discounts – Ideal for offices and businesses looking to upgrade their printing setup.
+         <br>✅ Free Shipping & Special Perks – On select models, get fast and free delivery!
+            
+            <br>We regularly update our promotions, so check back often to find the best deals on printers, ink cartridges, toners, paper, and more!
+            
+            <br>But hurry—these deals won’t last forever! Shop now and upgrade your printing experience while saving big!
+        
+        
+        </p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Contact Information – Get in Touch with Us!
+            <br>We’re here to assist you with all your printing needs! Whether you have questions about our products, need technical support, or require help with an order, our team is ready to assist.
+            
+            <br>📞 Phone: 09123456789
+            <br>📧 Email: aprilgumba@gmail.com
+            <br>💬 Live Chat: Available on our website for instant support
+            <br>🌐 Website: MyPrinterStore.com
+            <br>📍 Address: Buenavista, Agusan Del Norte
+            <br>🕒 Business Hours: 8:00 A.M - 5:00 P.M
+            
+            <br>We value our customers and strive to provide quick, professional, and friendly support. Feel free to reach out—we’d love to hear from you! 😊</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 My Printer Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
